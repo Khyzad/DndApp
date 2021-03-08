@@ -12,7 +12,7 @@ export const SavingThrowContainer: React.FC<IProps> = (props: IProps) => {
       <>
          <div id="saving-throw-container">
             {attributeOrder.map((attribute) => (
-               <div id="saving-throw">
+               <div id="saving-throw" key={attribute}>
                   <Checkbox
                      value="checkedA"
                      inputProps={{ 'aria-label': 'Checkbox A' }}
@@ -22,8 +22,8 @@ export const SavingThrowContainer: React.FC<IProps> = (props: IProps) => {
                </div>
             ))}
             <span id="saving-throw-label" className="center">Saving Throws</span>
-            
-         </div>         
+
+         </div>
       </>
    );
 };
