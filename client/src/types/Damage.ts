@@ -1,0 +1,5 @@
+export enum Damage {
+   BLUDGEONING = 'BLUDGEONING',
+   PIERCING = 'PIERCING',
+   SLASHING = 'SLASHING',   
+}

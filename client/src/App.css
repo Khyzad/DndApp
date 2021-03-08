@@ -1,0 +1,139 @@
+@media only screen and (max-width: 750px) {
+  #main-stage {
+    display: flex;
+    flex-direction: column;
+  }
+  #attribute-container {
+    display: flex;
+    align-items: center;
+    justify-content: middle;
+    width: 100%;
+  }
+
+  #saving-throw-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    column-gap: 15px;
+    margin-left: 15px;
+  }
+
+  #saving-throw {
+    display: flex;
+    justify-content: middle;
+    align-items: center;
+    width: 150px;
+  }
+
+  #saving-throw-label {
+    grid-column: 1/3;
+  }
+
+  #attribute-container .attribute-box {    
+    margin: 0 5px;
+  }
+
+  .attribute-box {
+    /* flex-grow: 1; */
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #portrait{
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    background-color: black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  #hud-container {
+    display: inline-block;
+    
+  }
+
+  #name-container {
+    
+  }
+
+  #passive-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  #face-container {
+    display: flex;
+  }
+
+  #data-container {
+    display: flex;
+  }
+
+  #saving-throw-container {
+    min-width: 125px;
+  }
+
+  .tab {
+    height: 450px;
+    overflow-y: auto;
+  }
+}
+
+#main-stage {
+  display: flex;
+}
+
+#tab-container {}
+
+#tab-page {
+  border-style: solid;
+}
+
+#tab-header {
+  display: flex;
+}
+
+#tab-header span {
+  flex-grow: 1;
+}
+
+#tab-header span:hover {
+  background-color: #444;
+}
+
+#tab-container span {
+  padding: .5rem;
+}
+
+#attribute-container {
+  /* display: inline-block; */
+  /* max-width: 125px; */
+}
+
+.attribute-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: middle;
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.attribute-box input {
+  font-size: 1.2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+input {
+  border-style: none;
+  box-sizing: border-box;
+}
