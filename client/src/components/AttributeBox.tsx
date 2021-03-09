@@ -7,15 +7,15 @@ interface IProps {
    modifier: number,
 }
 
-const AttributeBox: React.FC<IProps> = (props: IProps) => {   
+const AttributeBox: React.FC<IProps> = (props: IProps) => {
    const calculateModifier = () => {
 
    }
    return(
-      <div className="attribute-box">         
+      <div className="attribute-box">
          <span>{props.text}</span>
          <TextInput text="" length={2} isNumber={true} placeholder={props.text} className="center"></TextInput>
-         <span>{props.modifier}</span>
+         <div className="modifier">{props.modifier}</div>
       </div>
    );
 };

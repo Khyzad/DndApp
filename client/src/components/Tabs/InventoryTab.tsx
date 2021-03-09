@@ -14,6 +14,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import { makeStyles } from '@material-ui/core';
 
 const rowStyle: CSSProperties = {
    display: 'flex',
@@ -24,12 +25,19 @@ const rowStyle: CSSProperties = {
    width: '100%',
 }
 
+const useStyles = makeStyles({
+  table: {
+    marginTop: '10px',
+  }
+});
+
 interface IRowProps {
    item: IItem,
 }
 const InventoryRow: React.FC<IRowProps> = (props: IRowProps) => {
    const { name, description, quantity, rarity, tags } = props.item;
    const [open, setOpen] = useState(false);
+   const classes = useStyles();
 
    const handleOpen = (event: any) => {
       console.log(open);
@@ -85,7 +93,7 @@ const Wealth: React.FC<IWealthProps> = (props: IWealthProps) => {
    }
 
    return (
-      <div style={wealthStyle}>
+      <div className="wealth" style={wealthStyle}>
          <div style={wealthStyle}>
             <span>Copper</span>
             <TextInput text={`${copper}`} placeholder="0" length={3} width='24px' />
