@@ -8,7 +8,7 @@
     "src": "src"
   },
   "scripts": {
-    "test": "test" ,
+    "test": "jasmine",
     "start": "nodemon src/app.ts"
   },
   "author": "@khyzad",
@@ -30,6 +30,9 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
+    "jasmine": "^3.6.4",
+    "mongodb-memory-server": "^6.9.6",
+    "mongodb-memory-server-core": "^6.9.6",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   }
