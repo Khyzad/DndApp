@@ -30,7 +30,7 @@ mongoose
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
-// Use Routes
+// Use resolvers
 
 // Serve static assets if in production
 const port = process.env.PORT || 5000;
