@@ -9,6 +9,7 @@
   "scripts": {
     "test": "jasmine",
     "start": "nodemon src/app.ts",
+    "dev": "NODE_ENV=dev nodemon src/app.ts",
     "build": "tsc src/index.ts"
   },
   "author": "@khyzad",
