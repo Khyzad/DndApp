@@ -13,8 +13,8 @@ const AttributeBox: React.FC<IProps> = (props: IProps) => {
    }
    return(
       <div className="attribute-box">
-         <span>{props.text}</span>
-         <TextInput text="" length={2} isNumber={true} placeholder={props.text} className="center"></TextInput>
+         <span className="attribute-name">{props.text}</span>
+         <TextInput text="" length={2} isNumber={true} placeholder={props.text} className="textbox center"></TextInput>
          <div className="modifier">{props.modifier}</div>
       </div>
    );

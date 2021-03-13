@@ -18,6 +18,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
     margin-left: 15px;
+
+    .attribute-name {
+      width: 20px;
+    }
   }
 
   #saving-throw {
@@ -42,6 +46,10 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    text-align: center;
+    .attribute-name {
+      margin-bottom: 5px;
+    }
     .modifier {
       background-color: white;
       border: 2px solid black;

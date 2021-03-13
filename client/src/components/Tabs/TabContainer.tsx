@@ -1,20 +1,19 @@
 import React, { CSSProperties, useState, ChangeEvent } from 'react';
 import { Tabs, Tab } from '@material-ui/core';
-import {InventoryTab} from './InventoryTab';
-import {ActionTab} from './ActionTab';
+import { InventoryTab } from './InventoryTab';
+import { ActionTab } from './ActionTab';
 
 interface IProps {
 
 }
 const TabContainer: React.FC<IProps> = (props: IProps) => {
-   const tabs: string[] = [
+  const tabs: string[] = [
       'Inventory', 'Actions'//, 'Spells', 'Features', 'Background', 'Notes', 'Journal', 'Pets', 'Roll Statistics'
    ]
 
    const [currentTab, setCurrentTab] = useState(0);
 
    const handleChange = (event: ChangeEvent<{}>, selectedTab: number) => {
-      console.log(selectedTab);
       setCurrentTab(selectedTab);
    }
 
