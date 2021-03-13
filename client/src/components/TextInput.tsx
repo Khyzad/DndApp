@@ -36,10 +36,10 @@ const TextInput: React.FC<IProps> = (props: IProps) => {
 
    };
 
-   return (      
+   return (
       <TextField
          //label={placeholder}
-         variant="outlined"         
+         variant="outlined"
          className={`${className}`}
          onChange={updateText}
          placeholder={placeholder}
@@ -47,15 +47,15 @@ const TextInput: React.FC<IProps> = (props: IProps) => {
          size="small"
          inputProps={{
             maxLength: length,
-            size: length,    
+            size: length,
             className: `${className}`,
             style: {
                fontSize: `${fontSize}`,
                height: `${height}`,
                width: `${width}`,
-            }            
-         }}      
-      />      
+            }
+         }}
+      />
    );
 };
 
