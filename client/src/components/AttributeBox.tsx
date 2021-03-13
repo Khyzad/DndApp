@@ -1,6 +1,6 @@
 import React from 'react';
 import TextInput from './TextInput';
-
+import { Card } from '@material-ui/core';
 interface IProps {
    text: string,
    value: number,
@@ -15,7 +15,7 @@ const AttributeBox: React.FC<IProps> = (props: IProps) => {
       <div className="attribute-box">
          <span className="attribute-name">{props.text}</span>
          <TextInput text="" length={2} isNumber={true} placeholder={props.text} className="textbox center"></TextInput>
-         <div className="modifier">{props.modifier}</div>
+         <Card className="modifier">{props.modifier}</Card>
       </div>
    );
 };
