@@ -28,7 +28,11 @@ const rowStyle: CSSProperties = {
 const useStyles = makeStyles({
   table: {
     marginTop: '10px',
-  }
+  },
+  cell: {
+    paddingBottom: 0,
+    paddingTop: 0,
+  },
 });
 
 interface IRowProps {
@@ -54,7 +58,7 @@ const InventoryRow: React.FC<IRowProps> = (props: IRowProps) => {
             <TableCell colSpan={2}>{tags}</TableCell>
          </TableRow>
          <TableRow hidden={!open}>
-            <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={9}>
+            <TableCell className={classes.cell} colSpan={9}>
                <Collapse in={open} timeout="auto" unmountOnExit>
                   {description}
                </Collapse>
