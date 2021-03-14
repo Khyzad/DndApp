@@ -10,16 +10,16 @@ interface IProps {
 
 }
 const CharacterSheet: React.FC<IProps> = (props: IProps) => {
-   return (
-      <Paper id="sheet">
-         <FaceContainer />
-         <hr />
-         <div id="main-stage">
-            <AttributeContainer />
-            <TabContainer />
-         </div>
-      </Paper>
-   );
+  return (
+    <Paper id="sheet">
+      <FaceContainer />
+      <AttributeContainer />
+      <hr />
+      <div id="main-stage">
+        <TabContainer />
+      </div>
+    </Paper>
+  );
 }
 
 export default CharacterSheet;

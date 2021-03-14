@@ -15,6 +15,17 @@ const theme = createMuiTheme({
       main: green[500],
     },
   },
+  overrides: {
+    // Style sheet name ⚛️
+    MuiCard: {
+      // Name of the rule
+      root: {
+        // Some CSS
+        margin: '5px',
+        padding: '15px',
+      },
+    },
+  },
 });
 
 function App() {
